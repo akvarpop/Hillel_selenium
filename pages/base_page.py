@@ -15,7 +15,7 @@ class BasePage:
         return wait(self.driver, timeout).until(EC.visibility_of_element_located(locator))
 
     # Поиск видимых элементов
-    def element_are_visible(self, locator, timeout = 5):
+    def element_are_visible(self, locator, timeout=5):
         return wait(self.driver, timeout).until(EC.visibility_of_all_elements_located(locator))
 
     # Поиск элемента которого не видно в открывшемся окне
@@ -40,3 +40,4 @@ class BasePage:
 
     def send_pdf(self, locator, timeout=5):
         return wait(self.driver, timeout).until(EC.visibility_of_element_located(locator))
+

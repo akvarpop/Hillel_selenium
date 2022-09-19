@@ -33,3 +33,33 @@ class DeleteUser:
     BUTTON_GO = By.XPATH, '//*[@id="changelist-form"]/div[1]/button'
     BUTTON_YES_IM_SURE = By.XPATH, '//*[@id="content"]/form/div/input[4]'
     RESULT_TEXT = By.XPATH, '//*[@id="main"]/div/ul/li'
+
+
+class FindUser:
+    BUTTON_USERS = By.XPATH, '//*[@id="content-main"]/div/table/tbody/tr[2]/th/a'
+    SEARCH_WINDOW_USERS = By.XPATH, '//*[@id="searchbar"]'
+    BUTTON_SEARCH = By.XPATH, '//*[@id="changelist-search"]/div/input[2]'
+    RESULT_FIND_USER = By.XPATH, '//*[@id="result_list"]/tbody/tr/th/a'
+
+class UpdateUserData:
+    BUTTON_USERS = By.XPATH, '//*[@id="content-main"]/div/table/tbody/tr[2]/th/a'
+    SEARCH_WINDOW_USERS = By.XPATH, '//*[@id="searchbar"]'
+    BUTTON_SEARCH = By.XPATH, '//*[@id="changelist-search"]/div/input[2]'
+    RESULT_FIND_USER = By.XPATH, '//*[@id="result_list"]/tbody/tr/th/a'
+    #Personal info
+    FIRST_NAME = By.XPATH, '//*[@id="id_first_name"]'
+    FIRST_NAME_RESULT = By.XPATH, '//*[@id="id_first_name"]'
+    LAST_NAME = By.XPATH, '//*[@id="id_last_name"]'
+    EMAIL_ADDRESS = By.XPATH, '//*[@id="id_email"]'
+    #Permissions
+    ACTIVE = By.XPATH, '//*[@id="id_is_active"]'
+    STAFF_STATUS = By.XPATH, '//*[@id="id_is_staff"]'
+    SUPERUSER_STATUS = By.XPATH, '//*[@id="id_is_superuser"]'
+
+    #Button SAVE
+    SAVE = By.XPATH, '//*[@id="user_form"]/div/div/input[3]'
+    SAVE_AND_CONTINUE_EDITING = By.XPATH, '//*[@id="user_form"]/div/div/input[3]'
+    SAVE_AND_ADD_ANOTHER = By.XPATH, '//*[@id="user_form"]/div/div/input[2]'
+
+
+
