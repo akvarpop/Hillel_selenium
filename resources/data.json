@@ -1,0 +1,9 @@
+{
+  "name": "admin",
+  "password": "admin123",
+  "endpoint": "https://www.aqa.science/admin/",
+
+  "user_name_popravka": "Popravka",
+  "user_password_popravka": "test12345"
+
+}
