@@ -1,5 +1,17 @@
-import json
+import requests
 
-with open('/Users/antongrunt/Desktop/project/Hillel_selenium/resources/data.json', 'r') as f:
-    secret_variables = json.load(f)
-print(secret_variables)
+url = "https://aqa.science/users/"
+
+payload={
+    "username": "new_user_99998",
+    "email": "email@example.com",
+    "groups": []
+}
+
+headers = {
+
+}
+
+response = requests.request("DELETE", url, headers=headers, data=payload, auth=("admin" ,"admin123"))
+
+print(response.text)
