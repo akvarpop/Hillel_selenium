@@ -15,7 +15,7 @@ options.add_argument('--ignore-certificate-errors')
 @pytest.fixture(scope='session', autouse=True)
 def driver():
     driver = webdriver.Remote(
-        command_executor='http://localhost:4433/wd/hub',
+        command_executor='http://localhost:4444/wd/hub',
         options=options
     )
     driver.maximize_window()
